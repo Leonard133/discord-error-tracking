@@ -3,8 +3,8 @@
 namespace Leonard133\DiscordErrorTracking\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Leonard133\DiscordErrorTracking\DiscordErrorTrackingServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

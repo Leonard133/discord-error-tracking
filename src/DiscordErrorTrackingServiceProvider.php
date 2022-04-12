@@ -2,9 +2,9 @@
 
 namespace Leonard133\DiscordErrorTracking;
 
+use Leonard133\DiscordErrorTracking\Commands\DiscordErrorTrackingCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Leonard133\DiscordErrorTracking\Commands\DiscordErrorTrackingCommand;
 
 class DiscordErrorTrackingServiceProvider extends PackageServiceProvider
 {
