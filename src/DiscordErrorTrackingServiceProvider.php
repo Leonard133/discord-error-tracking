@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Leonard133\DiscordErrorTracking;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Leonard133\DiscordErrorTracking\Commands\DiscordErrorTrackingCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class DiscordErrorTrackingServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('discord-error-tracking')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_discord-error-tracking_table')
+            ->hasCommand(DiscordErrorTrackingCommand::class);
     }
 }

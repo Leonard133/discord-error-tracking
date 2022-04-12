@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Leonard133\DiscordErrorTracking\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class DiscordErrorTrackingCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'discord-error-tracking';
 
     public $description = 'My command';
 

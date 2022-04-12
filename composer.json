@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "leonard133/discord-error-tracking",
+    "description": " A package that send alert to discord when an error happen.",
     "keywords": [
-        ":vendor_name",
+        "Leonard133",
         "laravel",
-        ":package_slug"
+        "discord-error-tracking"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/leonard133/discord-error-tracking",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Leonard Lee",
+            "email": "leonard13396@hotmail.com",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Leonard133\\DiscordErrorTracking\\": "src",
+            "Leonard133\\DiscordErrorTracking\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Leonard133\\DiscordErrorTracking\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -49,15 +49,19 @@
         "test-coverage": "vendor/bin/pest --coverage"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Leonard133\\DiscordErrorTracking\\DiscordErrorTrackingServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "DiscordErrorTracking": "Leonard133\\DiscordErrorTracking\\Facades\\DiscordErrorTracking"
             }
         }
     },
